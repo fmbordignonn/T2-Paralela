@@ -1,0 +1,70 @@
+#!/bin/bash
+
+################-> are comments
+################-> "#PBS" are Batch Script commands
+
+#PBS -m abe
+
+################ Verbose mode
+
+#PBS -V
+
+################
+
+################ Change these parameters according to your requisites
+
+#PBS -l nodes=1:ppn=16:cluster-Grad,walltime=00:30:00
+
+################ Where:
+################ nodes = number of nodes requested
+################ ppn = number of cores per node
+################ cluster-Atlantica / cluster-Gates = cluster name
+################ walltime = max allocation time
+
+################ Please, change this e-mail address to yours
+
+#PBS -M frederico.thofehrn@edu.pucrs.br
+
+################
+
+#PBS -r n
+
+################ Output options
+
+#PBS -j oe
+
+################
+
+################ Please, change this directory to your working dir.
+
+#PBS -d /home/pp12706/openmp/T1/T2
+
+################
+
+################
+echo Running on host `hostname`
+echo
+echo Initial Time is `date`
+echo
+echo Directory is `pwd`
+echo
+echo This jobs runs on the following nodes:
+echo `cat $PBS_NODEFILE | uniq`
+echo
+echo JOB_ID:
+echo `echo $PBS_JOBID`
+echo ################
+
+
+############# If running a sequential or openMP program
+
+
+
+mpirun -np 7  ./min-dist-dc-mpi > min-dist-dc-mpi7.output 2> min-dist-dc-mpi7.times
+mpirun -np 15 ./min-dist-dc-mpi > min-dist-dc-mpi15.output 2> min-dist-dc-mpi15.times
+mpirun -np 31 ./min-dist-dc-mpi > min-dist-dc-mpi31.output 2> min-dist-dc-mpi31.times
+mpirun -np 63 ./min-dist-dc-mpi > min-dist-dc-mpi63.output 2> min-dist-dc-mpi63.times
+
+################
+
+echo Final Time is `date`

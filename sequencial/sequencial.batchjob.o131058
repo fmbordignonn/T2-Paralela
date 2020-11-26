@@ -1,0 +1,46 @@
+--------------------------------------
+Running PBS prologue script
+
+Checking all prerequisites...
+Done.
+
+Running on host grad07
+
+Initial Time is Wed Nov 25 23:50:42 BRST 2020
+
+Directory is /home/pp12704/trab2/sequencial
+
+This jobs runs on the following nodes:
+grad07
+
+JOB_ID:
+131058
+
+Final Time is Thu Nov 26 00:08:28 BRST 2020
+
+--------------------------------------
+Running PBS epilogue.user script
+
+End of PBS epilogue.user script
+
+--------------------------------------
+Running PBS epilogue script
+
+Disabling access of user pp12704 on the batch nodes
+Doing node grad07
+
+ -- Killing all stale user  processes... done.
+ -- Cleaning-up any shmemory segments... done.
+
+Done.
+
+Resources used:
+
+ -- CPU TIME     = 03:22:32 
+
+ -- MEMORY       = 639504kb 
+
+ -- VIRTUAL MEM  = 30031844kb 
+
+ -- ELAPSED TIME = 00:17:47 
+

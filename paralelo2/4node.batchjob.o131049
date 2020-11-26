@@ -1,0 +1,51 @@
+--------------------------------------
+Running PBS prologue script
+
+Checking all prerequisites...
+Done.
+
+Running on host grad06
+
+Initial Time is Wed Nov 25 23:34:47 BRST 2020
+
+Directory is /home/pp12704/trab2/paralelo2
+
+This jobs runs on the following nodes:
+grad06 grad07
+
+JOB_ID:
+131049
+
+Rodando com 63 processos
+Final Time is Wed Nov 25 23:35:59 BRST 2020
+
+--------------------------------------
+Running PBS epilogue.user script
+
+End of PBS epilogue.user script
+
+--------------------------------------
+Running PBS epilogue script
+
+Disabling access of user pp12704 on the batch nodes
+Doing node grad06
+
+ -- Killing all stale user  processes... done.
+ -- Cleaning-up any shmemory segments... done.
+Doing node grad07
+
+ -- Killing all stale user  processes... done.
+ -- Cleaning-up any shmemory segments... done.
+
+Done.
+
+Resources used:
+
+ -- CPU TIME     = 00:22:04 
+
+ -- MEMORY       = 1149432kb 
+
+ -- VIRTUAL MEM  = 29875532kb 
+
+ -- ELAPSED TIME = 00:01:13 
+
